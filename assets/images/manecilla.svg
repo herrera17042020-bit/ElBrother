@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="manecilla">
+<defs><radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#2a312e"/><stop offset="1" stop-color="#121514"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8ebe9"/><stop offset="0.5" stop-color="#9aa39e"/><stop offset="1" stop-color="#5d6661"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="262" rx="120" ry="12" fill="#000" opacity=".35"/>
+<rect x="40" y="188" width="86" height="40" rx="16" fill="#3a423f"/><circle cx="92" cy="208" r="12" fill="#8b968f"/>
+<path d="M92 208 L190 150 Q300 90 352 52 Q362 82 340 102 Q250 150 150 236 Z" fill="url(#metal)"/>
+<path d="M200 156Q300 100 346 66" stroke="#34e07a" stroke-width="5" stroke-linecap="round" fill="none"/><circle cx="92" cy="208" r="5" fill="#1b201e"/></svg>

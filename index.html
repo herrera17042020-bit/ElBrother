@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REPUESTOS MOTOR | Catálogo de repuestos para motocicletas</title>
+  <meta name="description" content="Consulta el catálogo de repuestos para motocicletas y solicita tus productos directamente por WhatsApp.">
+  <meta name="theme-color" content="#101312">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23101312'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%2334e07a' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%2334e07a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Ir al catálogo</a>
+
+  <header class="site-header" id="inicio-top">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="REPUESTOS MOTOR, inicio">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="4"/>
+          <circle cx="20" cy="20" r="4" fill="currentColor"/>
+          <path d="M20 5v6M20 29v6M5 20h6M29 20h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">REPUESTOS <b>MOTOR</b></span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <form class="search" role="search" id="search-form" autocomplete="off">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" id="search-input" placeholder="Buscar repuestos" aria-label="Buscar productos por nombre">
+      </form>
+
+      <a class="btn btn-wa header-wa" id="header-wa" href="#" target="_blank" rel="noopener noreferrer">
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.43 15.1L2 22l5.05-1.55A9.9 9.9 0 1 0 12.04 2zm5.8 14.1c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.02-1.3-5-4.34-5.15-4.55-.15-.2-1.23-1.64-1.23-3.12 0-1.49.78-2.22 1.05-2.52.28-.3.6-.38.8-.38l.58.01c.19 0 .43-.07.67.5.25.6.84 2.06.91 2.2.08.15.12.33.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.35.08.13.08.73-.17 1.43z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- PRESENTACIÓN -->
+    <section class="hero" id="inicio">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Encuentra los repuestos que tu motocicleta necesita</h1>
+          <p>Consulta nuestro catálogo y solicita tus productos directamente por WhatsApp</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">VER CATÁLOGO</a>
+            <a class="btn btn-ghost" href="#contacto">Contacto</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <div class="media-frame"><img src="assets/images/casco-setgo-rosa.jpg" alt="Casco integral SETGO rosa y negro con visor espejo" fetchpriority="high"></div>
+          <figcaption>Cascos SETGO disponibles en el catálogo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="section categories" id="categorias">
+      <div class="container">
+        <h2>Categorías</h2>
+        <p class="section-sub">Elige una categoría y mira solo lo que buscas.</p>
+        <div class="category-grid" id="category-grid"></div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="section catalog" id="catalogo">
+      <div class="container">
+        <div class="catalog-head">
+          <div>
+            <h2>Catálogo</h2>
+            <p class="section-sub" id="result-count" aria-live="polite"></p>
+          </div>
+          <label class="sort">
+            <span>Ordenar</span>
+            <select id="sort-select">
+              <option value="default">Destacados</option>
+              <option value="price-asc">Precio: menor a mayor</option>
+              <option value="price-desc">Precio: mayor a menor</option>
+              <option value="name">Nombre (A-Z)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="chips" id="chips" role="tablist" aria-label="Filtrar por categoría"></div>
+
+        <div class="product-grid" id="product-grid"></div>
+
+        <div class="empty" id="empty-state" hidden>
+          <h3>No encontramos ese producto</h3>
+          <p>Prueba con otra palabra o quita el filtro de categoría.</p>
+          <button class="btn btn-ghost" id="clear-filters" type="button">Ver todo el catálogo</button>
+        </div>
+
+        <p class="demo-note">Productos, imágenes y precios de demostración. Consulta disponibilidad real por WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contacto</h2>
+          <p class="section-sub">Escríbenos y te confirmamos precio y existencia.</p>
+          <a class="btn btn-wa btn-lg" id="contact-wa" href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#wa-sym"/></svg>
+            <span>Contactar por WhatsApp</span>
+          </a>
+        </div>
+        <dl class="info-list">
+          <div><dt>WhatsApp</dt><dd id="info-phone"></dd></div>
+          <div><dt>Horario de atención</dt><dd id="info-hours"></dd></div>
+          <div><dt>Ubicación</dt><dd id="info-location"></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand-name">REPUESTOS <b>MOTOR</b></span>
+      <span>Prototipo de demostración. Los datos mostrados son de ejemplo.</span>
+    </div>
+  </footer>
+
+  <!-- Visor de imagen -->
+  <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+    <button class="viewer-close" id="viewer-close" aria-label="Cerrar">&times;</button>
+    <img id="viewer-img" alt="">
+    <div class="viewer-info">
+      <div>
+        <h3 id="viewer-title"></h3>
+        <p id="viewer-price"></p>
+      </div>
+      <a class="btn btn-wa" id="viewer-wa" href="#" target="_blank" rel="noopener noreferrer"><span>SOLICITAR POR WHATSAPP</span></a>
+    </div>
+  </dialog>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="wa-sym" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.43 15.1L2 22l5.05-1.55A9.9 9.9 0 1 0 12.04 2zm5.8 14.1c-.25.7-1.45 1.33-2 1.4-.52.08-1.17.11-1.9-.12-.44-.14-1-.33-1.72-.64-3.02-1.3-5-4.34-5.15-4.55-.15-.2-1.23-1.64-1.23-3.12 0-1.49.78-2.22 1.05-2.52.28-.3.6-.38.8-.38l.58.01c.19 0 .43-.07.67.5.25.6.84 2.06.91 2.2.08.15.12.33.02.52-.1.2-.15.32-.3.5-.15.17-.31.38-.44.51-.15.15-.3.3-.13.6.17.3.77 1.27 1.65 2.05 1.13 1 2.09 1.31 2.39 1.46.3.15.47.12.65-.07.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.28.1 1.75.83 2.05.98.3.15.5.23.57.35.08.13.08.73-.17 1.43z"/></symbol>
+  </svg>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

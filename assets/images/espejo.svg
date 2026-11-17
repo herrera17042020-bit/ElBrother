@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="espejo">
+<defs><radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#2a312e"/><stop offset="1" stop-color="#121514"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8ebe9"/><stop offset="0.5" stop-color="#9aa39e"/><stop offset="1" stop-color="#5d6661"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="262" rx="120" ry="12" fill="#000" opacity=".35"/>
+<path d="M200 262V170" stroke="#8b968f" stroke-width="12" stroke-linecap="round"/><rect x="186" y="236" width="28" height="22" rx="4" fill="#3a423f"/>
+<g transform="rotate(-14 200 110)"><path d="M92 110q0-62 108-62t108 62q0 62-108 62T92 110z" fill="#3a423f"/><path d="M102 110q0-54 98-54t98 54q0 54-98 54t-98-54z" fill="url(#metal)"/><path d="M120 92q10-24 60-30" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".7"/></g></svg>

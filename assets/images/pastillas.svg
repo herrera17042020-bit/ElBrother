@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="pastillas">
+<defs><radialGradient id="bg" cx="50%" cy="45%" r="75%"><stop offset="0" stop-color="#2a312e"/><stop offset="1" stop-color="#121514"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8ebe9"/><stop offset="0.5" stop-color="#9aa39e"/><stop offset="1" stop-color="#5d6661"/></linearGradient></defs>
+<rect width="400" height="300" fill="url(#bg)"/>
+<ellipse cx="200" cy="262" rx="120" ry="12" fill="#000" opacity=".35"/>
+<g transform="translate(60,70)"><path d="M0 40q0-40 40-40h200q40 0 40 40v60q0 40-40 40H40Q0 140 0 100z" fill="#3a423f"/><path d="M14 44q0-30 30-30h192q30 0 30 30v52q0 30-30 30H44q-30 0-30-30z" fill="#2b312e"/>
+<path d="M14 44q0-30 30-30h192q30 0 30 30v52q0 30-30 30H44q-30 0-30-30z" fill="none" stroke="#34e07a" stroke-width="3" stroke-dasharray="2 8"/>
+<rect x="100" y="36" width="80" height="68" fill="#1b201e"/><rect x="108" y="44" width="64" height="52" fill="none" stroke="#8b968f"/>
+<circle cx="40" cy="70" r="10" fill="#1b201e"/><circle cx="240" cy="70" r="10" fill="#1b201e"/></g>
+<rect x="60" y="214" width="280" height="14" rx="4" fill="#34e07a"/></svg>
